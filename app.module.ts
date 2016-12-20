@@ -10,9 +10,11 @@ import {DashboardComponent} from './dashboard.component';
 import {HeroesComponent} from './heroes.component';
 import {HeroDetailComponent} from './hero-detail.component';
 import {HeroService} from './hero.service';
+import './rxjs-extensions';
+import {HeroSearchComponent} from "./hero-search.component";
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpModule, InMemoryWebApiModule.forRoot(InMemoryDataService), AppRoutingModule],
-  declarations: [AppComponent, DashboardComponent, HeroDetailComponent, HeroesComponent,],
+  declarations: [AppComponent, DashboardComponent, HeroDetailComponent, HeroesComponent,HeroSearchComponent ],
   providers: [HeroService],
   bootstrap: [AppComponent]
 })
